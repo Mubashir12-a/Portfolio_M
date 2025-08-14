@@ -1,0 +1,310 @@
+#AboutCont {
+  height: 430px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-bottom: 3px solid red;
+  border-top: 3px solid red;
+}
+
+/*Decoration*/
+
+.lines {
+  display: block;
+  height: 200%;
+  width: 5px;
+  top: -50%;
+  position: absolute;
+  background-color: red;
+  z-index: -1;
+  transform: rotate(-160deg);
+}
+
+.lines:nth-child(4) {
+  left: 0%;
+  background: linear-gradient(red, black, black, red);
+}
+.lines:nth-child(5) {
+  left: 20%;
+  background: linear-gradient(red, black, black, black, red, red);
+}
+.lines:nth-child(6) {
+  left: 40%;
+  background: linear-gradient(red, black, black, red);
+}
+.lines:nth-child(7) {
+  left: 60%;
+  background: linear-gradient(red, black, black, black, red, red);
+}
+.lines:nth-child(8) {
+  left: 80%;
+  background: linear-gradient(red, black, black, red, red);
+}
+.lines:nth-child(9) {
+  left: 100%;
+  background: linear-gradient(red, black, red, red);
+}
+
+.AbContainer_1 {
+  height: 60%;
+  width: 50%;
+  /* background-color: red; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 3;
+  position: relative;
+}
+
+.AbContainer_1 p:nth-child(1) {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.AbContainer_1 p:nth-child(1) span {
+  color: red;
+  font-size: 4rem;
+}
+
+.AbContainer_1 p:nth-child(2) {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.AbContainer_1 p:nth-child(2) span {
+  color: black;
+  font-size: 1.6rem;
+  background-color: red;
+}
+
+.AbContainer_1 p:nth-child(2) span:nth-child(2) {
+  display: inline-block;
+  background: red;
+  position: relative;
+}
+
+.AbContainer_1 p:nth-child(2) span:nth-child(2)::after {
+  content: "";
+  padding-left: 5px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  animation: TextAni 10s linear infinite;
+}
+
+@keyframes TextAni {
+  0% {
+    content: "K";
+  }
+  3.57% {
+    content: "KA";
+  }
+  7.14% {
+    content: "KAS";
+  }
+  10.71% {
+    content: "KASH";
+  }
+  14.28% {
+    content: "KASHM";
+  }
+  17.85% {
+    content: "KASHMI";
+  }
+  21.42% {
+    content: "KASHMIR";
+  }
+  25% {
+    content: "KASHMI";
+  }
+  28.57% {
+    content: "KASHM";
+  }
+  32.14% {
+    content: "KASH";
+  }
+  35.71% {
+    content: "KAS";
+  }
+  39.28% {
+    content: "KA";
+  }
+  42.85% {
+    content: "K";
+  }
+  46.42% {
+    content: "S";
+  }
+  50% {
+    content: "SR";
+  }
+  53.57% {
+    content: "SRI";
+  }
+  57.14% {
+    content: "SRIN";
+  }
+  60.71% {
+    content: "SRINA";
+  }
+  64.28% {
+    content: "SRINAG";
+  }
+  67.85% {
+    content: "SRINAGA";
+  }
+  71.42% {
+    content: "SRINAGAR";
+  }
+  75% {
+    content: "SRINAGAR";
+  }
+  78.57% {
+    content: "SRINAGA";
+  }
+  82.14% {
+    content: "SRINAG";
+  }
+  85.71% {
+    content: "SRINA";
+  }
+  89.28% {
+    content: "SRIN";
+  }
+  92.85% {
+    content: "SRI";
+  }
+  96.42% {
+    content: "SR";
+  }
+  100% {
+    content: "S";
+  }
+}
+
+.AbContainer_1 p:nth-child(3) {
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.AbContainer_2 {
+  height: 60%;
+  width: 20%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.AbContainer_2 img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.AbContainer_2 img:nth-child(1) {
+  transform: scale(1.5);
+}
+
+.AbContainer_2 img:nth-child(2) {
+  transform: scale(1.7);
+}
+
+.AbContainer_2 img:nth-child(3) {
+  position: absolute;
+  bottom: -35%;
+}
+
+/*Responsiveness*/
+
+@media (max-width: 768px) {
+  #AboutCont {
+    height: 550px;
+    flex-direction: column;
+  }
+
+  .AbContainer_1 {
+    height: 20%;
+    width: 90%;
+    /* background-color: blue; */
+    order: 2;
+  }
+
+  .AbContainer_1 p:nth-child(1) {
+    font-size: 1rem;
+  }
+
+  .AbContainer_1 p:nth-child(1) span {
+    font-size: 2rem;
+  }
+
+  .AbContainer_1 p:nth-child(2) {
+    font-size: 0.7rem;
+  }
+
+  .AbContainer_1 p:nth-child(2) span {
+    font-size: 0.8rem;
+  }
+
+  .AbContainer_1 p:nth-child(3) {
+    font-size: 0.5rem;
+  }
+
+  .lines {
+    height: 280%;
+    width: 5px;
+    top: -85%;
+    position: absolute;
+    background-color: red;
+    z-index: -1;
+    transform: rotate(-160deg);
+  }
+
+  .AbContainer_2 {
+    height: 200px;
+    width: 200px;
+    /* background-color: red; */
+    position: relative;
+  }
+
+  .AbContainer_2::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 200%;
+    background-color: red;
+    left: -50%;
+    bottom: 0;
+  }
+
+  .AbContainer_2 img {
+    position: absolute;
+  }
+
+  .AbContainer_2 img:nth-child(1) {
+    transform: scale(1.4);
+    top: -15%;
+  }
+
+  .AbContainer_2 img:nth-child(2) {
+    transform: scale(1.6);
+    top: -15%;
+  }
+
+  .AbContainer_2 img:nth-child(3) {
+    position: absolute;
+    bottom: 0%;
+  }
+}
