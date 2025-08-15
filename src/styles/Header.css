@@ -1,77 +1,91 @@
 #container {
-    /* background-color: rgb(74,31,87); */
-    background-color: black;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  /* background-color: rgb(74,31,87); */
+  background-color: black;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #container .text {
-    color: red;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-    font-size: 1.2em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    position: relative;
+  color: red;
+  height: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
 }
 
-
 #container .text::after {
-    content: "";
-    position: absolute;
-    left: -25%;
-    bottom: 0;
-    background-color: white;
-    height: 5%;
-    width: 150%;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+  height: 5%;
+  width: 125%;
 }
 
 #container .navigate {
-    height: 40px;
-    /* background-color: green; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-    padding: 10px 0;
+  height: 40px;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  padding: 10px 0;
 }
 
 #container .navigate .navi {
-    text-decoration: none;
-    font-size: 1.3em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    /* background-color: red; */
-    padding: 2px 8px;
-    color: rgb(200,220,227);
-    text-transform: uppercase;
-    position: relative;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  /* background-color: red; */
+  padding: 2px 8px;
+  color: rgb(200, 220, 227);
+  text-transform: uppercase;
+  position: relative;
 }
 
-
-
 .navi::after {
-    content: "";
-    position: absolute;
-    height: 10%;
-    width: 0%;
-    background-color: red;
-    left: 50%;
-    bottom: 0;
-    transition: all 1.5s;
+  content: "";
+  position: absolute;
+  height: 10%;
+  width: 0%;
+  background-color: red;
+  border-radius: 10px;
+  left: 50%;
+  bottom: 0;
+  transition: all 1.5s;
 }
 
 .navi:hover::after {
-    width: 100%;
-    height: 10%;
-    left: 0;
-    box-shadow: 0 0 5px 1px red;
-    transition: all 1s;
+  width: 100%;
+  height: 10%;
+  left: 0;
+  box-shadow: 0 0 5px 1px red;
+  transition: all 1s;
+}
+
+/*Responsiveness*/
+
+@media (max-width: 758px) {
+  #container .navigate {
+    width: 90%;
+  }
+
+  #container .text {
+    font-size: 1em;
+  }
+
+  #container .navigate .navi {
+    font-size: 1em;
+  }
 }

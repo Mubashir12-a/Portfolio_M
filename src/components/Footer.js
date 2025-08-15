@@ -21,7 +21,7 @@ function Footer(){
                             <li><a href="/">Hosting</a></li>
                             <li><a href="/">Design & Assets</a></li>
                             <li><a href="/">API's Used</a></li>
-                            <li><a href="/">Inspiration & Reference</a></li>
+                            <li><a href="/">Inspiration</a></li>
                             <li><a href="/">Licence</a></li>
                         </ul>
                     </ul>
