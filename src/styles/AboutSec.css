@@ -224,9 +224,9 @@
 
 .AbContainer_2 img:nth-child(3) {
   position: absolute;
-  bottom: -35%;
+  bottom: -15%;
   transform: scale(1.2);
-  height: 110%;
+  height: 95%;
 }
 
 /*Responsiveness*/

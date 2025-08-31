@@ -37,6 +37,7 @@
 #AboutDetailed div p {
   font-size: 1.5rem;
   text-align: justify;
+  color: black;
 }
 
 #AboutDetailed div p span {

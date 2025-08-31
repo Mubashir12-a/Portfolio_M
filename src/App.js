@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutSec from './components/AboutSec';
 import AboutDetailed from './components/AboutDetailed';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <AboutSec/>
       <AboutDetailed/>
+      <Skills/>
       <Footer/>
     </Router>
   );
