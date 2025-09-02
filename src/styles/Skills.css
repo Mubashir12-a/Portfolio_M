@@ -176,25 +176,144 @@
 
 
 
+/*Display-Block*/
+
+
 #DisplayInfoSkill {
-    background-color: green;
+    background-color: black;
+    border: 2px solid cyan;
+    color: white;
     height: 95%;
     width: 66%;
     margin-right: 2%;
     border-radius: 10px;
 }
 
+.BasicHeading {
+    font-size: 3rem;
+    padding-left: 5%;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    color: cyan;
+}
 
+.BasicHead_2 {
+    color: cyan;
+    font-size: 2.5rem;
+    padding-left: 10%;
+    letter-spacing: 3px;
+}
+
+.Basic {
+    background-color: black;
+    height: 10%;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Basic button {
+    height: 100%;
+    width: 20%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: black;
+    font-weight: bold;
+    background-color: cyan;
+    border: none;
+    transition: all 0.3s;
+}
+
+.Basic button:nth-child(1) {
+    border-radius: 10px 0 0 10px;
+}
+.Basic button:nth-child(5) {
+    border-radius: 0 10px 10px 0;
+}
+.Basic button:nth-child(1),
+.Basic button:nth-child(2),
+.Basic button:nth-child(3), 
+.Basic button:nth-child(4) {
+    border-right: 1px solid black;
+}
+
+.Basic button:nth-child(1):checked {
+    background-color: red;
+}
+
+.Basic button:active {
+    transform: scale(0.9);
+    transition: all 0.3s;
+} 
+
+.Basic button:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+} 
+
+.ShowMore {
+    background-color: black;
+    width: 80%;
+    height: 35%;
+    margin-left: 8%;
+    margin-top: 2%;
+    padding: 2%;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Discription {
+    height: 100%;
+    color: red;
+    align-content: center;
+    position: relative;
+    /* background-color: yellow; */
+}
+
+.Discription_1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    /* background-image: url("../assets/html-5.png");
+    background-position: center;
+    background-size: 35%;
+    background-repeat: no-repeat; */
+}
+
+/* .Discription_2::after {
+    content: "";
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} */
+
+/*Responsive*/
 
 @media (max-width: 768px) {
     #SkillContainer {
-        height: 800px;
+        height: 600px;
         flex-direction: column;
+        justify-content: space-evenly;
     }
 
     #InfoSkill {
         width: 95%;
-        height: 200px;
+        height: 150px;
         display: flex;
         justify-content: space-evenly;
         align-items: flex-end;
@@ -253,8 +372,38 @@
     }
 
     #DisplayInfoSkill {
-        height: 95%;
-        width: 95%;
+        height: 70%;
+        width: 98%;
+        margin-left: 1%;
+        overflow: hidden;
+    }
+
+    .BasicHeading {
+        font-size: 2rem;
+        color: red;
+    }
+
+    .BasicHead_2 {
+        font-size: 1.5rem;
+        color: red;
+    }
+
+    .Basic {
+        height: 8%;
+        width: 98%;   
+        margin-left: 1%;
+    }
+
+    .Basic button {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        color: red;
+        background-color: #222222;
+    }
+
+    .ShowMore {
+        width: 96%;
+        margin-left: 0;    
+        font-size: 0.8rem;
     }
 }
-
