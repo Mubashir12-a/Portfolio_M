@@ -1,0 +1,91 @@
+* {
+    --bgMain : black;
+    --btnTypeOneBg : red;
+    --TextBtnClr : black;
+}
+
+#Project {
+    background-color: var(--bgMain);
+    height: 600px;
+    width: 100%;
+}
+
+#P_btns {
+    background-color: transparent;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.P_btn {
+    display: inline-block;
+    background-color:var(--btnTypeOneBg);
+    height: 90%;
+    width: calc(100% / 8);
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--TextBtnClr);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.P_btn::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    background: linear-gradient(to right, cyan, hotpink);
+    left: -200%;
+    top: 0;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.P_btn:hover::after {
+    transform: translateX(75%);
+    transition: all 0.3s;
+    animation: MoveBgP_Btns 3s linear infinite;
+    animation-delay: 0.3s;
+}
+
+.P_btn:hover {
+    color: black;
+}
+
+@keyframes MoveBgP_Btns {
+    0% {
+        transform: translateX(75%);
+    }
+    25% {
+        transform: translateX(50%);
+    }
+    50% {
+        transform: translateX(75%);
+    }
+    75% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(75%);
+    }
+    
+}
+
+.lineThrough {
+    display: inline-block;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background-color: red;
+}
+

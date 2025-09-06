@@ -194,7 +194,7 @@
     padding-left: 5%;
     letter-spacing: 5px;
     text-decoration: underline;
-    color: cyan;
+    color: red;
 }
 
 .BasicHead_2 {
@@ -271,36 +271,15 @@
 
 .Discription {
     height: 100%;
-    color: red;
+    color: white;
     align-content: center;
     position: relative;
-    /* background-color: yellow; */
+    border: 2px solid white;
+    padding: 0 10px;
+    background-color: rgba(255, 0, 0, 0.216);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
 }
-
-.Discription_1::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: green;
-    /* background-image: url("../assets/html-5.png");
-    background-position: center;
-    background-size: 35%;
-    background-repeat: no-repeat; */
-}
-
-/* .Discription_2::after {
-    content: "";
-    background-color: blue;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-} */
 
 /*Responsive*/
 
@@ -405,5 +384,6 @@
         width: 96%;
         margin-left: 0;    
         font-size: 0.8rem;
+        height: 48%;
     }
 }
