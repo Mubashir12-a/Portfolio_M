@@ -5,22 +5,16 @@ function ProjectSec(){
     return (
         <>
             <section id="Project">
-                <div id="P_btns">
-                    <Link to='/' className='P_btn'>Fun</Link>
-                    <Link to='/' className='P_btn'>Components</Link>
-                    <Link to='/' className='P_btn'>Inspired</Link>
-                    <Link to='/' className='P_btn'>Serious</Link>
-                    <Link to='/' className='P_btn'>Professional</Link>
-                    <span className="lineThrough"></span>
-                </div>
-                <div id="P_btnCntnt">
-                    <Routes>
-                        <Route path='/' element />
-                        <Route path='/' element />
-                        <Route path='/' element />
-                        <Route path='/' element />
-                        <Route path='/' element />
-                    </Routes>
+                <div id="P_Navbar">
+                    <div className="P_heading">
+                        <h2>Projects</h2>
+                    </div>
+                    <div className="P_navigate">
+                        <Link to="/" className='NavLink'>Web-Component</Link>
+                        <Link to="/" className='NavLink'>Front-End</Link>
+                        <Link to="/" className='NavLink'>Full-Stack</Link>
+                        <Link to="/" className='NavLink'>App-Dev</Link>
+                    </div>
                 </div>
             </section>
         </>
