@@ -1,5 +1,5 @@
 import '../styles/ProjectSec.css';
-import {Route, Routes, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function ProjectSec(){
     return (
@@ -15,6 +15,27 @@ function ProjectSec(){
                         <Link to="/" className='NavLink'>Full-Stack</Link>
                         <Link to="/" className='NavLink'>App-Dev</Link>
                     </div>
+                    <div className="P_Navigate-2">
+                        <Link to="/" className='NavLink'>Basic</Link>
+                        <Link to="/" className='NavLink'>Intermediate</Link>
+                        <Link to="/" className='NavLink'>Advanced</Link>
+                    </div>
+                </div>
+
+
+                <div className="P_Cntnt_Cntn">
+                    <img src={require(`../Assets/P_Slides/underconstruction.jpg`)} alt="" />
+
+                    <div className="P_Navigate-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere architecto molestiae, repudiandae nostrum sit! Aliquam voluptas rem nemo saepe.</p>
+                        <div className="P_Nav_Links">
+                            <Link to="/" className='NavLink'>Source</Link>
+                            <Link to="/" className='NavLink'>Visit</Link>
+                        </div>
+                    </div>
+
+                    <Link to="/" id="SlideLeft">&#9664;</Link>
+                    <Link to="/" id="SlideRight">&#9654;</Link>
                 </div>
             </section>
         </>

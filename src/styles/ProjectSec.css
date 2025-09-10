@@ -1,7 +1,8 @@
 #Project {
     height: 600px;
     width: 100%;
-    background-color: rgb(83, 80, 80);
+    background: url('../Assets/P_Slides/Project_BG.jpg');
+    background-size: cover;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -10,7 +11,7 @@
 }
 
 #P_Navbar {
-    background-color: grey;
+    background-color: transparent;
     height: 70px;
     width: 96%;
     border-radius: 10px;
@@ -19,36 +20,210 @@
     align-items: center;
     padding: 0 8px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+#P_Navbar::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.052);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    border: 2px solid cyan;
+    border-radius: 10px;
 }
 
 #P_Navbar .P_heading {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.111);
+    backdrop-filter: blur(2px);
+    border: 1px solid cyan;
     width: 25%;
     height: 75%;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 5px;
 }
 
 #P_Navbar .P_navigate {
     /* background-color: white; */
-    width: 60%;
+    width: 50%;
     height: 75%;
     border-radius: 8px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 #P_Navbar .P_navigate .NavLink {
     all: initial;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.111);
+    backdrop-filter: blur(2px);
+    border: 1px solid cyan;
     height: 100%;
     padding: 0 10px;
     font-size: 1.2rem;
     text-align: center;
     align-content: center;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
+    letter-spacing: 2px;
+}
+
+#Project .P_Cntnt_Cntn {
+    background-color: grey;
+    height: 80%;
+    width: 96%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 61% 0%, 62% 3%, 62% 22%, 63% 24%, 99% 24%, 100% 27%, 100% 100%, 0% 100%);
+}
+
+#Project .P_Cntnt_Cntn img {
+    position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.P_Navigate-2 {
+    height: 140%;
+    width: 37%;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 130% ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+    overflow: hidden;
+    border: 2px solid cyan;
+}
+
+.P_Navigate-2::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.052);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+.P_Navigate-2 .NavLink {
+    all: initial;
+    height: 70%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.159);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border: 1px solid cyan;
+}
+
+#Project .P_Cntnt_Cntn .P_Navigate-3 {
+    height: 30%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.256);
+    backdrop-filter: blur(5px);
+    border: 2px solid white;
+    position: absolute;
+    bottom: 8%;
+    right: 3%;
+    border-radius: 10px;
+}
+
+#Project .P_Cntnt_Cntn .P_Navigate-3 p {
+    width: 98%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.247);
+    margin: 1% 1%;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 17px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    border: 1px solid white;
+}
+
+#Project .P_Cntnt_Cntn .P_Navigate-3 .P_Nav_Links {
+    width: 98%;
+    height: 30%;
+    /* background-color: green; */
+    margin: 0 1%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Project .P_Cntnt_Cntn .P_Navigate-3 .P_Nav_Links .NavLink {
+    all: initial;
+    background-color: rgba(255, 255, 255, 0.248);
+    width: 48%;
+    height: 100%;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#SlideLeft {
+    position: absolute;
+    height: 100%;
+    width: 3%;
+    left: 0;
+    background: linear-gradient(to left, transparent, black);
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+#SlideRight {
+    position: absolute;
+    height: 85%;
+    width: 3%;
+    top: 15%;
+    right: 0;
+    background: linear-gradient(to right, transparent, black);
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+#Project .P_Cntnt_Cntn .P_Navigate-3 .P_Nav_Links .NavLink:hover,
+.P_Navigate-2 .NavLink:hover,
+#P_Navbar .P_navigate .NavLink:hover {
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+#Project .P_Cntnt_Cntn .P_Navigate-3 .P_Nav_Links .NavLink:active,
+.P_Navigate-2 .NavLink:active,
+#P_Navbar .P_navigate .NavLink:active {
+    background-color: transparent;
+    transform: scale(0.9);
+    transition: all 0.5s;
 }
