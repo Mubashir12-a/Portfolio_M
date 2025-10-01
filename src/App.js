@@ -14,9 +14,9 @@ function App() {
       <AboutSec/>
       <AboutDetailed/>
       <Skills/>
+      <ProjectSec/>
       <Footer/>
 
-      <ProjectSec/>
     </Router>
   );
 }
