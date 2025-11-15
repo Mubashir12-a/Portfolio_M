@@ -32,7 +32,7 @@ function Skills(){
 
                 <div id="DisplayInfoSkill">
                     <Routes>
-                        <Route path='/' element={<Basic/>}/>
+                        <Route path='' element={<Basic/>}/>
                         <Route path='inter' element={<Intermediate/>}/>
                         <Route path='adv' element={<Advanced/>}/>
                     </Routes>

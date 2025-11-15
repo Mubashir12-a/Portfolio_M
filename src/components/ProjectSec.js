@@ -43,10 +43,10 @@ function ProjectSec(){
                         <h2>Projects</h2>
                     </div>
                     <div className="P_navigate">
-                        <Link to="/" className='NavLink' onClick={() => setActiveLink(0)}>Web Component</Link>
-                        <Link to="/" className='NavLink' onClick={() => setActiveLink(1)}>Front End</Link>
-                        <Link to="/" className='NavLink' onClick={() => setActiveLink(2)}>Full Stack</Link>
-                        <Link to="/" className='NavLink' onClick={() => setActiveLink(3)}>App Dev</Link>
+                        <Link to="" className='NavLink' onClick={() => setActiveLink(3)}>App Dev</Link>
+                        <Link to="" className='NavLink' onClick={() => setActiveLink(0)}>Web Component</Link>
+                        <Link to="" className='NavLink' onClick={() => setActiveLink(1)}>Front End</Link>
+                        <Link to="" className='NavLink' onClick={() => setActiveLink(2)}>Full Stack</Link>
                     </div>
                     <div className="P_Navigate-2">
                         <Link to="/" className='NavLink'>Basic</Link>
@@ -58,7 +58,7 @@ function ProjectSec(){
 
                 <div className="P_Cntnt_Cntn">
                     <Routes>
-                        <Route path='/' element={<ContentUpdate Img={Links[ActiveLink][0].Img} Text={Links[ActiveLink][0].Para} />}/>
+                        <Route path='' element={<ContentUpdate Img={Links[ActiveLink][0].Img} Text={Links[ActiveLink][0].Para} />}/>
                         <Route path='P_Inter' element={<ContentUpdate Img={Links[ActiveLink][1].Img} Text={Links[ActiveLink][1].Para} />}/>
                         <Route path='P_Advance' element={<ContentUpdate Img={Links[ActiveLink][2].Img} Text={Links[ActiveLink][2].Para} />}/>
                     </Routes>
