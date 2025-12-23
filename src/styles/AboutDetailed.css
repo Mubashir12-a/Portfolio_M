@@ -35,14 +35,15 @@
 }
 
 #AboutDetailed div p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-align: justify;
-  color: black;
+  color: white;
+  padding: 0 50px;
 }
 
 #AboutDetailed div p span {
-  background-color: black;
-  color: red;
+  /* background-color: black; */
+  color: white;
   padding: 0 5px;
   font-size: 1.2rem;
 }

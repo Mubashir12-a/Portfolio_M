@@ -1,46 +1,59 @@
-import '../styles/Skills.css'
-import {Routes, Route, Link } from "react-router-dom";
+import { useState } from 'react';
+import '../styles/Skills.css';
+
 import Basic from './Skill_Components/BasicSkill';
 import Intermediate from './Skill_Components/IntermediateSkill';
 import Advanced from './Skill_Components/AdvancedSkill';
 
+function Skills() {
+    const [activeSkill, setActiveSkill] = useState('basic');
 
-function Skills(){
+    let content = <Basic />;
+    if (activeSkill === 'inter') content = <Intermediate />;
+    if (activeSkill === 'adv') content = <Advanced />;
+
     return (
-        <>                                                   
-            <section id='SkillContainer'>
+        <section id='SkillContainer'>
 
-                <div id="InfoSkill">
-                    <span>
-                        <span className='dot'></span>
-                    </span>
-                    <h2>SKILL's</h2>
-                    <Link to="/" className='link_1 link'>Basic</Link>
-                    <Link to="inter" className='link_2 link'>Intermediate</Link>
-                    <Link to="adv" className='link_3 link'>Advanced</Link>
+            <div id="InfoSkill">
+                <span>
+                    <span className='dot'></span>
+                </span>
 
-                    <span>
-                        <span className="dot"></span>
-                    </span>
-                    <span>
-                        <span className="dot"></span>
-                    </span>
-                    <span>
-                        <span className="dot"></span>
-                    </span>
-                </div>
+                <h2>SKILL's</h2>
 
-                <div id="DisplayInfoSkill">
-                    <Routes>
-                        <Route path='' element={<Basic/>}/>
-                        <Route path='inter' element={<Intermediate/>}/>
-                        <Route path='adv' element={<Advanced/>}/>
-                    </Routes>
-                </div>
+                <button
+                    className='link_1 link'
+                    onClick={() => setActiveSkill('basic')}
+                >
+                    Basic
+                </button>
 
-            </section>
-        </>
-    )
+                <button
+                    className='link_2 link'
+                    onClick={() => setActiveSkill('inter')}
+                >
+                    Intermediate
+                </button>
+
+                <button
+                    className='link_3 link'
+                    onClick={() => setActiveSkill('adv')}
+                >
+                    Advanced
+                </button>
+
+                <span><span className="dot"></span></span>
+                <span><span className="dot"></span></span>
+                <span><span className="dot"></span></span>
+            </div>
+
+            <div id="DisplayInfoSkill">
+                {content}
+            </div>
+
+        </section>
+    );
 }
 
 export default Skills;
