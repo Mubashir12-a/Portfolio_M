@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#certi_sec {
+    height: 1000px;
+    width: 100%;
+    background-color: #000000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#certi_sec h1 {
+    background-color: red;
+    width: 40%;
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+    border-radius: 10px;
+}
+
+#certi_sec #navigate {
+    /* background-color: green; */
+    position: relative;
+    width: 80%;
+    height: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#certi_sec #navigate h3:nth-child(1) {
+    background-color: cyan;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 45%;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px 30px 30px 10px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+#certi_sec #navigate h3:nth-child(2) {
+    background-color: blue;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    left: 44.2%;
+    top: -70%;
+    text-align: center;
+    align-content: center;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+#certi_sec #navigate h3:nth-child(2) a{
+    all: initial;
+    /* background-color: red; */
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 38%;
+    left: 0%;
+    display: inherit;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#certi_sec #navigate h3:nth-child(3) {
+    background-color: blueviolet;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 45%;
+    text-align: center;
+    align-content: center;
+    border-radius: 30px 10px 10px 30px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+
+#certi_sec #nestedSec {
+    background-color: orange;
+    height: 60%;
+    width: 96%;
+}
+
+#certi_sec #newPage {
+    background-color: aqua;
+    height: 5%;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+}
+
+#certi_sec #newPage a {
+    all: initial;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+#certi_sec #newPage a:hover {
+    background-color: red;
+
+}

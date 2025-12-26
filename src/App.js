@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 import AboutSec from './components/AboutSec';
 import AboutDetailed from './components/AboutDetailed';
 
+// import CertificateSec from './components/CertificateSec'
+
 function App() {
   return (
     <>
@@ -18,6 +20,8 @@ function App() {
         <Skills/>
         <ProjectSec/>
         <Footer/>
+
+        {/* <CertificateSec/> */}
 
       </Router>
     </>

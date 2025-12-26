@@ -107,6 +107,7 @@
 
   #AboutDetailed div p {
     font-size: 1rem;
+    padding: 0;
   }
 
   #AboutDetailed div p span {
