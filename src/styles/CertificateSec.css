@@ -349,3 +349,37 @@ dec-right span:nth-child(3) {
     right: -74%;
     transform: scale(0.3);
 }
+
+
+@media (max-width: 758px) {
+
+#certi_sec h1 {
+    font-size: 0.8rem;
+    height: 25px;
+}
+
+dec-left,
+dec-right {
+    height: 2px;
+    width: 100px;
+    margin-top: 53px;
+}
+
+dec-left span:nth-child(1),
+dec-right span:nth-child(1) {
+    height: calc(75px/2);
+    width: calc(75px/2);
+}
+dec-left span:nth-child(2),
+dec-right span:nth-child(2) {
+    height: calc(50px/2);
+    width: calc(50px/2);
+}
+dec-left span:nth-child(3),
+dec-right span:nth-child(3) {
+    height: calc(30px/2);
+    width: calc(30px/2);
+}
+
+
+}
